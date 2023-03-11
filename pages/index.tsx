@@ -26,7 +26,7 @@ export default function HomePage() {
     try {
       setLoading(true);
 
-      const response = await axios.get("http://www.omdbapi.com", {
+      const response = await axios.get("https://www.omdbapi.com", {
         params: {
           apikey: process.env.NEXT_PUBLIC_OMDB_API_KEY,
           s: searchQuery,
